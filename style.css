@@ -100,3 +100,56 @@ img{
   text-decoration:none;
   color:#fff;
 }
+
+/*-----Services section-------*/
+.services-items{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+
+}
+
+.services-items .item{
+  width:100%;
+  height:40vh;
+  background:grey;
+  border-radius:8px;
+  margin-top:15px;
+}
+
+/*-----Skills section-------*/
+
+.items{
+  margin-top: 20px;
+  margin-bottom:50px;
+}
+.items ul{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+  list-style:none;
+}
+
+.items ul li{
+}
+
+.items ul li a{
+  text-decoration: none;
+  color:#111;
+  background:grey;
+  padding:10px;
+  border-radius:8px;
+}
+
+/*--About section---*/
+
+.about-items{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top:20px;
+  margin-bottom: 20px;
+  gap:1px;
+}
+
+
