@@ -202,3 +202,9 @@ input{
   margin:10px;
 }
 
+.inner-footer{
+  width:100%;
+  padding:20px;
+  background: #111;
+  color:#fff;
+}
