@@ -23,7 +23,6 @@ h3{
 
 .container{
   padding:5% 10%;
-  border:
 }
 
 .nav{
@@ -250,25 +249,82 @@ img{
 }
 
 /*---contact section----*/
-
 .contact{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:5px;
-  margin-top:20px;
-}
-
-form{
   display:flex;
-  flex-direction:column;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding:20px;
+}
+.contact-left{
+  flex-basis: 35%;
+  background:;
+  height:45vh;
+}
+
+.contact-right{
+  flex-basis: 60%;
+  background:;
+  height:50vh;
+}
+
+.contact-right form{
+  width:100%;
+}
+
+form input,form textarea{
+  width:100%;
+  outline:none;
+  border:0;
+  background:#262626;
   padding:10px;
-}
-
-input{
-  padding:5px;
   margin:10px;
+  color:#fff;
+  font-size:16px;
+  border-radius:8px;
 }
 
+form .btn{
+  background:grey;
+  margin-top:20px;
+  cursor:pointer;
+}
+
+.contact p{
+  margin-top:20px;
+  font-size: 18px;
+  padding:15px;
+}
+
+.contact .social-icons{
+  margin-top:30px;
+}
+
+.contact .social-icons a{
+  text-decoration:none;
+  font-size:30px;
+  margin-right:15px;
+  color:#fff;
+  display:inline-block;
+  transition:transform 5s;
+}
+
+.contact .social-icons a:hover{
+  color:grey;
+  transform:translateY(-5px);
+}
+
+.btn2{
+  display:inline-block;
+  background:grey;
+  outline:none;
+  border:0;
+  padding:8px;
+  margin-top: 5px;
+  border-radius: 8px;
+
+}
+
+/*-----footer section--------*/
 .inner-footer{
   width:100%;
   padding:20px;
