@@ -115,6 +115,34 @@ img{
   background:grey;
   border-radius:8px;
   margin-top:15px;
+  padding:20px;
+  transition:background 0.5s, transform 0.5s;
+}
+
+.item:hover{
+  background:rgb(234, 140, 140);
+  color:#111;
+  transform:translate Y(-10px);
+}
+
+.item h4{
+  font-size:20px;
+  margin-bottom:16px;
+}
+
+.item p{
+  font-size:16px;
+  line-height:20px;
+  margin-bottom:10px;
+}
+
+.item a{
+  text-decoration:none;
+  padding:5px;
+  background:#111;
+  color:grey;
+  border-radius: 8px;
+  font-weight:larger;
 }
 
 /*-----Skills section-------*/
