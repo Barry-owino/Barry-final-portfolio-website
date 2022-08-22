@@ -11,8 +11,8 @@ body{
 }
 
 h3{
-
   font-size:30px;
+  color:grey;
 }
 
 .header{
@@ -118,6 +118,11 @@ img{
   transition:background 0.5s, transform 0.5s;
 }
 
+.services-items.item p{
+  line-height:20px;
+  font-size:18px;
+}
+
 .item:hover{
   background:rgb(234, 140, 140);
   color:#111;
@@ -182,6 +187,15 @@ img{
   flex-basis:77%;
 }
 
+.about-info h3{
+  color:grey;
+
+}
+
+.about-info p{
+  line-height: 27px;
+  margin-top:15px;
+}
 .about-img{
   flex-basis: 20%;
 }
