@@ -67,10 +67,11 @@ h3{
 }
 
 .hero{
-  background:#fff;
+  background:grey;
+  border:2px solid black;
   width:100%;
   height:auto;
-  margin-bottom: 0px;
+  margin-top: 50px;
   display:flex;
   flex-direction:row;
   align-items:center;
@@ -174,6 +175,91 @@ img{
   border-radius:8px;
 }
 
+/*--Skills progress-bar section--*/
+.progress h4{
+  font-weight: 400;
+  color:#262626;
+  letter-spacing: 1px;
+  margin-top:10px;
+  margin-bottom:5px;
+  font-size: 16px;
+}
+
+.progress-bar{
+  width:600px;
+  height:10px;
+  border-radius:5px;
+  background:grey;
+}
+
+.progress-bar div{
+  height:10px;
+  width:0%;
+  border-radius:5px;
+}
+
+.progress-bar div span{
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  background: #fff;
+  color:#111;
+  float:right;
+  margin-top:-15px;
+  margin-right: -20px;
+  padding:2px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.html{
+  background:#cddc39;
+  animation:html 1s linear forwards;
+}
+.html span{
+  border:1px solid #cddc39;
+}
+
+.css{
+  background:#00bcd4;
+  animation:css 1s linear forwards;
+}
+.css span{
+  border:1px solid #00bcd4;
+}
+
+.javascript{
+  background:green;
+  animation:javascript 1s linear forwards;
+}
+.javascript span{
+  border:1px solid green;
+}
+
+.python{
+  background:#ffeb3b;
+  animation:python 1s linear forwards;
+}
+.python span{
+  border:1px solid #ffeb3b;
+}
+
+.react{
+  background:#9c27b0;
+  animation:react 1s linear forwards;
+}
+.react span{
+  border:1px solid #9c27b0;
+}
+
+.bootstrap{
+  background:#00bcd4;
+  animation:bootstrap 1s linear forwards;
+}
+.bootstrap span{
+  border:1px solid #00bcd4;
+}
 /*--About section---*/
 
 .about-items{
@@ -359,4 +445,40 @@ form .submit{
   font-size:26px;
 }
 
+/*--Animation @Keyframes----*/
 
+@keyframes html{
+  100%{
+    width:86%;
+  }
+}
+
+@keyframes css{
+  100%{
+    width:72%;
+  }
+}
+
+@keyframes javascript{
+  100%{
+    width:68%;
+  }
+}
+
+@keyframes bootstrap{
+  100%{
+    width:60%;
+  }
+}
+
+@keyframes react{
+  100%{
+    width:50%;
+  }
+}
+
+@keyframes python{
+  100%{
+    width:45%;
+  }
+}
