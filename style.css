@@ -10,6 +10,10 @@ body{
   background:#fff;
 }
 
+.html{
+  scroll-behavior:smooth;
+}
+
 h3{
   font-size:30px;
   color:grey;
