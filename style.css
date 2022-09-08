@@ -409,7 +409,17 @@ img{
 .contact-left{
   flex-basis: 35%;
   background:;
-  height:45vh;
+  border:;
+  height:68vh;
+}
+
+.contact-left p .fa-brands,.fa-solid{
+  padding:2px;
+
+}
+
+.contact-left p .fa-brands{
+  color:green;
 }
 
 .contact-right{
