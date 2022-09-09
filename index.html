@@ -256,7 +256,7 @@
           <a class="btn2" href="path_to_file" download="my letter.docx">Download CV</a>
         </div>
         <div class="contact-right">
-          <form>
+          <form onsubmit="sendEmail(); reset(); return false;">
             <input
               name="Name"
               type="text"
@@ -273,6 +273,7 @@
               name="Email"
               type="email"
               placeholder="Enter Email"
+              id="email"
               required
             />
             <textarea
@@ -296,7 +297,6 @@
       </div>
     </div>
 
-
-  
+    <script src="app.js"></script>
   </body>
 </html>
