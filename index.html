@@ -256,15 +256,15 @@
           <a class="btn2" href="path_to_file" download="my letter.docx">Download CV</a>
         </div>
         <div class="contact-right">
-          <form onsubmit="sendEmail(); reset(); return false;">
+          <form name="submit-to-google-sheet">
             <input
-              name="Name"
+              name="FirstName"
               type="text"
               placeholder="Enter Firstname"
               required
             />
             <input
-              name="Name"
+              name="LastName"
               type="text"
               placeholder="Enter Lastname"
               required
@@ -284,6 +284,8 @@
             ></textarea>
             <button type="submit" class="submit">Submit</button>
           </form>
+
+          <span id="msg"></span>
         </div>
       </div>
     </div>
@@ -298,5 +300,25 @@
     </div>
 
     <script src="app.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyPuPu7GEq2JwqrIFMf5Jxrz-bxU-Nkc1hKQ4RA51ttCYNGb57eYG61_JDDgAXcn4WZCQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Thanks For Contacting Me,Will Reply Very Soon!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>

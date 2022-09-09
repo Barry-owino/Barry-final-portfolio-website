@@ -501,6 +501,12 @@ form .submit{
   border-radius: 8px;
 }
 
+.contact span{
+  color:green;
+  padding-top:15px;
+  display:block;
+}
+
 /*-----footer section--------*/
 .inner-footer{
   width:100%;
